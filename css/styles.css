@@ -1,6 +1,60 @@
 /* Author: Daniel Rodriguez */
 /* Date: 1/29/2022 */
 
+.shadow
+{
+    text-shadow: 1px 1px #800000;
+}
+
+h1
+{
+    font-size: 150%;
+}
+
+header h2
+{
+    color: #800000;
+    font-size: 170%
+}
+
+header h3
+{
+    font-style: italic;
+    margin-left: 30px;
+}
+
+header img
+{
+    float: left;
+    margin-right: 50px;
+}
+
+main h1
+{
+    font-size: 150%;
+}
+
+main h2
+{
+    font-size: 130%;
+    color: #800000;
+}
+
+main h3
+{
+    font-size: 105%;
+}
+
+a:focus
+{
+    font-style: italic;
+}
+
+a:hover
+{
+    font-style: italic;
+}
+
 .mission-statement
 {
     width: 40%;
@@ -9,4 +63,9 @@
 .quote
 {
     margin: 0 0 0 5%;
+}
+
+footer p
+{
+    text-align: center;
 }
