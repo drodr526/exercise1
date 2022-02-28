@@ -167,3 +167,67 @@ footer
     background-color: #800000;
     text-align: center;
 }
+
+nav
+{
+    position: relative;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav li
+{
+    float: left;
+    background-color: #800000; 
+    width: 20%;
+    padding: 1em 0 1em 0;
+}
+
+nav a
+{
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.current
+{
+    color: yellow;
+}
+
+.submenu
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li
+{
+    float: none;
+    text-align: center;
+}
+
+.submenu ul::after
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.submenu-tab:hover .submenu
+{
+    display: block;
+}
+
+main hr
+{
+    height: 3px;
+    background-color: #800000;
+}
