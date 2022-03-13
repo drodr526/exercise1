@@ -9,20 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js\jquery.slicknav.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
     </head>
 <body>
-
     <header>
         <img src="images/townhall.png" alt="townhall logo" height=100>
         <h2>San Joaquin Valley Town Hall</h2>
         <h3>Celebrate our <span class="shadow">75th</span> Year</h3>
-
-        
-
     </header>
 
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li>
@@ -108,23 +114,25 @@
         
 
         <section class="aside">
-            <h2>Guest speakers</h2>
-            <h3>October</h3>
-            <a href="speakers/toobin.html"><h3>Jeffrey Toobin</h3></a>
-            <img src="images/toobin.jpg" alt="Jeffrey Toobin" height="100">
+            
+                <h2>Guest speakers</h2>
+                <h3>October</h3>
+                <div class="speakers-div">
+                    <a href="speakers/toobin.html"><h3>Jeffrey Toobin</h3></a>
+                    <img src="images/toobin.jpg" alt="Jeffrey Toobin" height="100">
 
+                    <h3>November</h3>
+                    <a href="speakers/sorkin.html"><h3>Andrew Ross Sorkin</h3></a>
+                    <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin" height="100">
+                    <h3>January</h3>
+                    <a href="speakers/chua.html"><h3>Amy Chua</h3></a>
+                    <img src="images/chua75.jpg" alt="Amy Chua" height="100">
 
-            <h3>November</h3>
-            <a href="speakers/sorkin.html"><h3>Andrew Ross Sorkin</h3></a>
-            <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin" height="100">
+                    <h3>January</h3>
+                    <a href="speakers/sampson.html"><h3>Scott Sampson</h3></a>
+                    <img src="images/sampson75.jpg" alt="Amy Chua" height="100">
 
-            <h3>January</h3>
-            <a href="speakers/chua.html"><h3>Amy Chua</h3></a>
-            <img src="images/chua75.jpg" alt="Amy Chua" height="100">
-
-            <h3>January</h3>
-            <a href="speakers/sampson.html"><h3>Scott Sampson</h3></a>
-            <img src="images/sampson75.jpg" alt="Amy Chua" height="100">
+                </div>
         </main>
         </section>
         
@@ -133,5 +141,6 @@
         <p>(c) 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
     </footer>
 
+    
 </body>
 </html>
